@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Интернет-магазин - корзина</title>
+</head>
+
+<body>
+    <header class="header">
+		<h1 class="visually-hidden">Регистрация</h1>
+		<div class="container header__wrapper">
+
+			 <div class="header__logo_wrapper">
+				  <a href="index.html"><img class="header__logo" src="img/logo.svg" width="44" height="38"alt="Логотип"></a>
+				  <div class="header__button header__search_button">
+						 <object type="image/svg+xml" data="picture.svg">
+							 <img src="img/icons8-search.svg"  width="29" height="29" viewBox="0 0 29 29" alt="Фолбэк">
+						 </object>
+								<input type="search" class="header__search" placeholder="Поиск">
+				  </div>
+			 </div>
+
+			 <div class="header__list_wrapper">
+				  <ul class="header__list">
+
+						<li>
+							<button type="button" class="header__button" id="menu_button">
+								 <object type="image/svg+xml" data="picture.svg">
+									 <img src="img/burger.svg"  width="29" height="29" viewBox="0 0 29 29" alt="Фолбэк">
+								  </object>   
+							 </button>
+						</li>
+
+						<li>
+							<a href="register.html">
+									<div class="header__button">
+									 <object type="image/svg+xml" data="picture.svg">
+										 <img src="img/Group.svg"  width="29" height="29" viewBox="0 0 29 29" alt="Фолбэк">
+									  </object>
+								 </div>
+							 </a>
+						 </li>
+
+						<li>
+							<a href="cart.html">
+								<div class="header__button">
+									<object type="image/svg+xml" data="picture.svg">
+									 <img src="img/basket.svg"  width="29" height="29" viewBox="0 0 29 29" alt="Фолбэк">
+								  </object>
+								</div>
+							 </a>
+						 </li>
+				  </ul>
+			 </div>
+		</div>
+        <nav class="header__navigation">
+            <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
+                class="header__navigation_close">
+                <path
+                    d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"/>
+            </svg>
+            <h2 class="header__navigation_heading">menu</h2>
+            <ul class="header__navigation_list">
+                <li>
+                    <a class="header__navigation_heading_link" href="#">
+                        <h3 class="header__navigation_list_heading">man</h3>
+                    </a>
+                    <ul>
+                        <li><a class="header__navigation_link" href="#">Accessories</a></li>
+                        <li><a class="header__navigation_link" href="#">Bags</a></li>
+                        <li><a class="header__navigation_link" href="#">Denim</a></li>
+                        <li><a class="header__navigation_link" href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="header__navigation_heading_link" href="#">
+                        <h3 class="header__navigation_list_heading">woman</h3>
+                    </a>
+                    <ul>
+                        <li><a class="header__navigation_link" href="#">Accessories</a></li>
+                        <li><a class="header__navigation_link" href="#">Jackets & Coats</a></li>
+                        <li><a class="header__navigation_link" href="#">Polos</a></li>
+                        <li><a class="header__navigation_link" href="#">T-Shirts</a></li>
+                        <li><a class="header__navigation_link" href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="header__navigation_heading_link" href="#">
+                        <h3 class="header__navigation_list_heading">kids</h3>
+                    </a>
+                    <ul>
+                        <li><a class="header__navigation_link" href="#">Accessories</a></li>
+                        <li><a class="header__navigation_link" href="#">Jackets & Coats</a></li>
+                        <li><a class="header__navigation_link" href="#">Polos</a></li>
+                        <li><a class="header__navigation_link" href="#">T-Shirts</a></li>
+                        <li><a class="header__navigation_link" href="#">Shirts</a></li>
+                        <li><a class="header__navigation_link" href="#">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="heading">
+            <h2 class="heading__heading container">shopping cart</h2>
+        </section>
+        <section class="cart container">
+                <h2 class="visually-hidden">корзина</h2>
+                <div class="cart__wrapper">
+                <ul class="cart__list">
+                    <li class="cart__list-item">
+                        <img src="img/cart_man_in_hoody.jpg" alt="Man in hoody" width="262" height="306" class="cart__list-img">
+                        <div class="cart__list-wrapper">
+                            <h3 class="cart__list-heading">mango people t-shirt</h3>
+                            <p class="cart__list-text">Price: <span class="cart__list-pink">$300</span></p>
+                            <p class="cart__list-text">Color: Red</p>
+                            <p class="cart__list-text">Size: Xl</p>
+                            <div class="cart__list-subwrapper">
+                                <label class="cart__list-text">Quantity:</label>
+                                <input type="text" class="cart__list-qty" placeholder="2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart__list-item">
+                        <img src="img/cart_man_in_red.jpg" alt="Man in red" width="262" height="306" class="cart__list-img">
+                        <div class="cart__list-wrapper">
+                            <h3 class="cart__list-heading">mango people t-shirt</h3>
+                            <p class="cart__list-text">Price: <span class="cart__list_item_pink">$300</span></p>
+                            <p class="cart__list-text">Color: Red</p>
+                            <p class="cart__list-text">Size: Xl</p>
+                            <div class="cart__list-subwrapper">
+                                <label class="cart__list-text">Quantity:</label>
+                                <input type="text" class="cart__list-qty" placeholder="2">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                    <ul class="cart__list-buttons">
+                        <li><button type="reset" class="cart__list-button">clear shopping cart</button></li>
+                        <li><button type="button" class="cart__list-button">continue shopping</button></li>
+                    </ul>
+                </div>                  
+                <div class="cart__shipping_wrapper">
+                    <form action="post" class="cart__shipping">
+                        <h3 class="cart__shipping_heading">shipping adress</h3>
+                        <label for="city" class="visually-hidden">City</label>
+                        <input type="text" id="city" class="cart__shipping_input" placeholder="Bangladesh">
+                        <label for="state" class="visually-hidden">State</label>
+                        <input type="text" id="state" class="cart__shipping_input" placeholder="State">
+                        <label for="zip" class="visually-hidden">Postcode/zip</label>
+                        <input type="text" id="zip" class="cart__shipping_input" placeholder="Postcode / Zip">
+                        <button type="submit" class="cart__shipping_button">get a quote</button>
+                    </form>
+                    <div class="cart__total">
+                        <div class="cart__total_text_wrapper">
+                            <p class="cart__subtotal_text">sub total $900</p>
+                            <p class="cart__grandtotal_text">grand total $900</p>
+                        </div>
+                        <div class="cart__total_checkout_wrapper">
+                            <hr class="cart__total_line">
+                            <button type="submit" class="cart__total_checkout">proceed to checkout</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="main__overlay"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="subscribe">
+            <div class="container subscribe__wrapper">
+                <h2 class="visually-hidden">Subscribe</h2>
+                <ul class="subscribe__list">
+                    <li class="subscribe__list_item">
+                        <img class="subscribe__list_item_img" src="img/woman_face.png" width="96" alt="Subscribe">
+                        <p class="subscribe__list_item_text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                            mi,<span class="subscribe__list_item_italic">a pulvinar purus condimentum“</span></p>
+                    </li>
+                    <li class="subscribe__list_item">
+                        <h3 class="subscribe__list_item_heading">subscribe</h3>
+                        <h4 class="subscribe__list_item_subheading">for our newletter and promotion</h4>
+                        <div class="subscribe__list_input_wrapper">
+                            <input class="subscribe__list_item_input" type="text" placeholder="enter your email">
+                            <button type="submit" class="subscribe__list_item_button">subscribe</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <h2 class="visually_hidden">Copyright</h2>
+            <ul class="copyright__list container">
+                <li>
+                    <p class="copyright__list_text">&copy; 2021 Brand All Rights Reserved.</p>
+                </li>
+                <div class="copyright__list_social">
+						<a href="https://twitter.com"><img src="img/tv.png" alt="" width="40px" height="40px"></a>
+						<a href="https://www.instagram.com/"><img src="img/inst.png" alt="" width="40px" height="40px"></a>
+					</div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
